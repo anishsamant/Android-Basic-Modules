@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject jsonPart=jsonArray.getJSONObject(i);
                 String main=jsonPart.getString("main");
                 String description=jsonPart.getString("description");
-                mainANdDescription.setText("Main: "+main+"\n"+"Description: "+description);
+                mainANdDescription.append("Main: "+main+"\n"+"Description: "+description);
 
             }
         } catch (JSONException e) {
