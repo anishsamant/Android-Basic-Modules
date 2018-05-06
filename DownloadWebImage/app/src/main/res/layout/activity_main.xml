@@ -24,7 +24,7 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/downloadButton"
             android:layout_marginTop="10dp"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:scaleType="centerCrop" />
     </RelativeLayout>
 
 </ScrollView>
