@@ -47,27 +47,27 @@ public class DownloadJsonContent  extends AsyncTask<String, Void, String>{
         return null;
     }
 
-    protected void onPostExecute(String result)
-    {
-        Log.i("Result",result);
-        JSONObject jsonObject= null;
-        try {
-            jsonObject = new JSONObject(result);
-            String weatherInfo=jsonObject.getString("weather");
-            Log.i("String",weatherInfo);
-            JSONArray jsonArray=new JSONArray(weatherInfo);
-            for(int i=0;i<jsonArray.length();i++)
-            {
-                JSONObject jsonPart=jsonArray.getJSONObject(i);
-                String main=jsonPart.getString("main");
-                String description=jsonPart.getString("description");
-                Log.i("Main",main);
-                Log.i("Description",description);
-
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-    }
+//    protected void onPostExecute(String result)
+//    {
+//        Log.i("Result",result);
+//        JSONObject jsonObject= null;
+//        try {
+//            jsonObject = new JSONObject(result);
+//            String weatherInfo=jsonObject.getString("weather");
+//            Log.i("String",weatherInfo);
+//            JSONArray jsonArray=new JSONArray(weatherInfo);
+//            for(int i=0;i<jsonArray.length();i++)
+//            {
+//                JSONObject jsonPart=jsonArray.getJSONObject(i);
+//                String main=jsonPart.getString("main");
+//                String description=jsonPart.getString("description");
+//                Log.i("Main",main);
+//                Log.i("Description",description);
+//
+//            }
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
 }
