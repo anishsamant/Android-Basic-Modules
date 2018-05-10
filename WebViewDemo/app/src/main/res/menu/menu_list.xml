@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Search new site"
+        android:id="@+id/newSite"
+        />
+
+    <item
+        android:title="HTML Content"
+        android:id="@+id/htmlContent"
+        />
+
+</menu>
